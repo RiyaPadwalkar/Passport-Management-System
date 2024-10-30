@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - Passport Management System</title>
+    <link rel="stylesheet" href="logout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="logout-message">
+            <h1>Logout Successful</h1>
+            <p>You have been successfully logged out of the Passport Management System.</p>
+            <p>Thank you for using our services. If you need to access your account again, please <a href="login.html">login</a> with your credentials.</p>
+        </div> -->
+        <form id="logoutForm" action="logout.php" method="get">
+            <label for="userid">User ID:</label>
+            <input type="text" id="userid" name="userid" required><br><br>
+            <input type="submit" value="Check Status">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Passport Management System</p>
+    </footer>
+</body>
+</html>

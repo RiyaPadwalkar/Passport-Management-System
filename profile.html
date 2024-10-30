@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Passport Management System</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Applicant Profile</h1>
+
+        <!-- User ID Search Form -->
+        <form action="profile.php" method="GET" class="search-form">
+            <label for="user-id">User ID:</label>
+            <input type="text" id="id" name="id" placeholder="Enter User ID" required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Profile Details (Populated after Search) -->
+        <div class="photo-container">
+            <img src="uploads/<?php echo isset($user['photo']) ? $user['photo'] : 'default.jpg'; ?>" alt="Profile Photo" class="profile-photo">
+        </div>
+
+        <div class="profile-info">
+            <label>Applicant Number:</label>
+            <span><?php echo isset($user['id']) ? $user['id'] : 'N/A'; ?></span>
+        </div>
+        <div class="profile-info">
+            <label>Name:</label>
+            <span><?php echo isset($user['name']) ? $user['name'] : 'N/A'; ?></span>
+        </div>
+        <div class="profile-info">
+            <label>Date of Birth:</label>
+            <span><?php echo isset($user['dob']) ? $user['dob'] : 'N/A'; ?></span>
+        </div>
+        <div class="profile-info">
+            <label>Address:</label>
+            <span><?php echo isset($user['address']) ? $user['address'] : 'N/A'; ?></span>
+        </div>
+        <div class="profile-info">
+            <label>Email:</label>
+            <span><?php echo isset($user['email']) ? $user['email'] : 'N/A'; ?></span>
+        </div>
+        <div class="profile-info">
+            <label>Phone Number:</label>
+            <span><?php echo isset($user['phone']) ? $user['phone'] : 'N/A'; ?></span>
+        </div>
+        <div class="profile-info">
+            <label>Gender:</label>
+            <span><?php echo isset($user['gender']) ? $user['gender'] : 'N/A'; ?></span>
+        </div>
+        <div class="profile-info">
+            <label>Passport Type:</label>
+            <span><?php echo isset($user['passport_type']) ? $user['passport_type'] : 'N/A'; ?></span>
+        </div>
+        <div class="profile-info">
+            <label>Aadhar Card:</label>
+            <span><a href="uploads/<?php echo isset($user['aadhar_card']) ? $user['aadhar_card'] : '#'; ?>" download>Aadhar Card</a></span>
+        </div>
+        <div class="profile-info">
+            <label>Address Proof:</label>
+            <span><a href="uploads/<?php echo isset($user['address_proof']) ? $user['address_proof'] : '#'; ?>" download>Address Proof</a></span>
+        </div>
+    </div>
+</body>
+</html>

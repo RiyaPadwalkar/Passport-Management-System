@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details {
+    width: 40%;
+   // background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.contact-form {
+    width: 55%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #23527c;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+
+input[type="text"], input[type="email"], textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    margin-top: 10px; /* Add this line to add space between input fields */
+}
+
+input[type="text"], input[type="phone"], textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    margin-top: 10px; /* Add this line to add space between input fields */
+}
+
+input[type="text"], input[type="message"], textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    margin-top: 10px; /* Add this line to add space between input fields */
+}

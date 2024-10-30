@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign-Up Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="header">
+		<div class="logo">
+			<img src="logo.jpg" alt="PassportPro Logo">
+		</div>
+		<div class="header-title">
+			<h1>PassportPro</h1>
+			<p>Passport Management System</p>
+		</div>
+	</div>
+
+    <!-- Navigation Bar -->
+	<div class="nav-bar">
+		<ul>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="profile.html">User    Profile</a></li>
+			<li><a href="security.html">Security</a></li>
+			<li><a href="logout.html">Logout</a></li>
+		</ul>
+	</div>
+
+    <div class="form-container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit" onsubmit="index.html">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="showSignUpForm()">Sign Up</a></p>
+        </div>
+        
+        <div id="signup-form" style="display: none;">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="post">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required>
+                <br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLoginForm()">Login</a></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+	<footer>
+		<div class="footer-content">
+			<p>&copy; 2023 PassportPro - Passport Management System</p>
+			<p>Address: 123 Main St, Anytown, INDIA</p>
+			<p>Phone: 555-555-5555</p>
+			<p>Email: [info@passportpro.com](mailto:info@passportpro.com)</p>
+			<p>Follow us on social media:</p>
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+<script src="login.js"></script>
+</html>
